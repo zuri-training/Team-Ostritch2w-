@@ -18,7 +18,7 @@
 
 - [Links](#links)
 
-- [Technologies Used](#langs)
+- [Technologies/Stacks/Languages To Use](#langs)
 
 <a id="scope"></a>
 
