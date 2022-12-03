@@ -101,7 +101,7 @@ The 3rd feature includes a sign up page /login page and 4th feature suggests (as
 
 ## Links
 
-*links here, modify when ready*
+[Documentation](https://docs.google.com/document/d/1398uKa6jz8dqIcQosrzwtx-qr0b1h5tS4gY4zxB2pX8/edit?usp=sharing)
 
 **DO NOT SHARE PRIVATE DATA, CROSS-CHECK BEFORE SHARING**
 
