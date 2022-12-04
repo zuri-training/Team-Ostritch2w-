@@ -2,49 +2,67 @@
 
 ## Table Of Content
 
-- [Project Scope]() 
+- [Project Scope](#scope)
 
-- [Problem Statement]()
+- [Problem Statement](#problem)
 
-- [Research Background]()
+- [Research Background](#research)
 
-   - [Modalities]()
-   
-   - [User Case Scenario]()
-   
-   - [Niche]()
-   
-   - [Links]()
+- [Modalities](#modals)
 
-- [Set Up and Installation]()
+  - [User: Unauthenticated](#unauthorized)
 
-- [Technologies Used]()
+  - [User: Authenticated](#authorized)
+
+- [User Case Scenario](#scenarios)
+
+- [Links](#links)
+
+- [Technologies/Stacks/Languages To Use](#langs)
+
+<a id="scope"></a>
 
 ## Project Scope
-       
-       QR Code- Quick response Code
 
-- It is basically a collection/array of barcodes with black and white squares that are mainly machine-readable codes.
+This project involves the creation of a simple QR generator. Users
+will be able to see some basic information but not allowed to use the
+QR generator unless they are registered. This is to limit the number
+of users who might use the QR 'for the fun of it' (AWS bills are no joke!) and allow for some
+level of privacy.
 
-- It can be used for storing URLs and other information.
-
-- They are capable of storing lots of data/information that can be read by a digital device, eg cell phones
-
-- It gives more information about a user to prospects.
+<a id="problem"></a>
 
 ## Problem Statement
-QR codes are fast becoming popular these days. Most people are drifting away from the traditional mode of advertising/marketing and just storing their digital information online in QR codes. QR codes are everywhere we go now; banks, hospitals, hotels, restaurants etc. But the question on everyone’s lips is how do they come about these codes?
 
-These codes are generated online by an online software called QR code generator. From secondary research, a lot of these platforms are not simplified enough for beginners to use. And to tackle that problem, we will be following the popular saying: “Less is more.” We will design a platform that allows users to generate QR codes with less hassle. The QR code generated can be downloaded, shared online amongst many other features and when scanned will lead to the user’s portfolio website or catalogue.
+QR codes are fast becoming popular these days. Most people are
+drifting away from the traditional mode of advertising/marketing and
+just storing their digital information online in QR codes. QR codes
+are almost everywhere; banks, hospitals, hotels, restaurants etc. But the question on everyone’s lips is how do they come about these codes?
+
+These codes are generated online by an online software called QR code
+generator. From secondary research, a lot of these platforms are not
+simplified enough for beginners to use. And to tackle that problem, we
+will be following the popular saying: “Less is more". A platform will
+be designed and built in a way that allows users to generate QR codes
+with less hassle. The QR code(s) generated can be downloaded and
+shared on whichever social media platform one is on, amongst many
+other features and when scanned, will lead to a user's portfolio
+website/catalogue, personal bio-data... the possibilities are endless
+but for this project, the team will keep things simple.
+
+<a id="research"></a>
 
 ## Research Background
-Currently in the project phase under the Zuri training, user research is being carried out on the project topic assigned to our group as part of the requirement of the programme.
+Data is currently being collected from various groups to ascertain their reaction towards using QR technology in their everyday lives.
 
-We aim to design and build a platform that allows users to generate QR code that leads to their portfolio website or catalogue when scanned. QR code generators are fast becoming popular these days. They allow people access digital information with a quick scan. The ‘QR’ in QR code means quick response. Any type of digital information can be stored in these codes. A QR generator is an online software that is used to create or generate these QR codes that store digital information. There are two types of QR codes; static and dynamic. The digital information in static QR codes cannot be edited once it is generated but in dynamic QR codes, the information can be edited even after the QR code is generated.
+<a id="modals"></a>
 
 ## Modalities
 
-#### User: Unauthenticated
+<a id="unauthorized"></a>
+
+### User: Unauthenticated
+
 - 1st and 2nd features.
 
 The first requirement is that users should visit the platform and get to see information about the platform. Hence, a landing page for the project. The second feature entails a view demo button.
@@ -52,6 +70,8 @@ The first requirement is that users should visit the platform and get to see inf
 - 3rd and 4th features.
 
 The 3rd feature includes a sign up page /login page and 4th feature suggests (as required) a functionality to the sign up fields (which means that anyone that visits the site will be required to login first, before getting to see all other features/functionalities of the site).
+
+<a id="authorized"></a>
 
 ### User: Authenticated
 
@@ -61,47 +81,40 @@ The 3rd feature includes a sign up page /login page and 4th feature suggests (as
 
 - User Dashboard Section Design - A personal space for the user to save and manage (manipulate) their respective QR codes.
 
-- Allow user save data and come back to it
-### User Case Scenario
-“I am a developer, I set up a profile on the proposed application with my portfolio links, after which a QR code is generated for me. I have an option of sharing the QR code to social media or download it on my phone.”
+- Allow user save data and come back to it, like they never left
 
-## Niche
-Advertising
+<a id="scenarios"></a>
+
+## User Case Scenario
+
+> “I am a developer, I set up a profile on the proposed application with
+>my portfolio links, after which a QR code is generated for me. I
+>havean option of sharing the QR code to social media or download it
+>on my phone."
+
+> "I wish there was a way to pay for my groceries without fishing
+> about for my credit card. My banking app has the QR feature but no
+> one is using it. Oh look,this store supports QR, life just got
+> easier for me"
+
+<a id="links"></a>
+
 ## Links
-## Set Up and Installation
-Clone the repository into your local machine, to install this project, using the following command;
 
-            git clone https://github.com/zuri-training/Team-Ostritch2w-.git
-After cloning, change directory into the project folder, using the command below;
+[Documentation](https://docs.google.com/document/d/1398uKa6jz8dqIcQosrzwtx-qr0b1h5tS4gY4zxB2pX8/edit?usp=sharing)
 
-            cd <project-directory>
-Create a virtual environment (unarguably a very useful practice for new projects) to install the required dependencies, using;
+**DO NOT SHARE PRIVATE DATA, CROSS-CHECK BEFORE SHARING**
 
-            virtualenv <virtual-environment-name>
-Activate the virtual environment you created using;
+<a id="langs"></a>
 
-Linux/OS: 
-
-            $ source <virtual-environment-name>/Scripts/activate
-          
-Windows OS:
-
-            C:\Users\Name\<project-directory> path\to\<virtual-environment-name>\Scripts\activate
-Install the required dependencies using;
-
-            pip install -r requirements.txt
-Prepare the models as tables to be migrated to the database using;
-
-            python manage.py makemigrations
-Migrate the tables using;
-
-            python manage.py migrate
-Then run your server using;
-
-              python manage.py runserver
-### Technologies Used
- #### Design - Figma Python
-#### Frontend - HTML5 HTML5 CSS3 CSS3 Javascript Javascript
-#### Backend - Stack: Python Python
-#### Framework - Django Django
-#### Database - SQLite3
+## Technologies/Stacks/Languages To Use
+- Design
+  - Figma
+- Front-end
+  - HTML/CSS/JavaScript
+- Backend
+  - NodeJs
+- Framework(s)
+  - Express
+- Database
+  - MongoDB
