@@ -1,0 +1,3 @@
+* Documentation For The QR API
+** Basic Project Structure Added For The Backend
+Changes will be documented accordingly
