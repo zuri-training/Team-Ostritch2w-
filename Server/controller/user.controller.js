@@ -10,7 +10,7 @@ import { User } from '../database/models/index.js';
 import httpErr from 'http-errors';
 import { authUserSchema } from '../utils/index.js';
 const userRouter = express.Router();
-
+import { signAccTok } from '../middleware/index.js';
 /**
  * GET/ Homepage
  * Author: David Mebo
@@ -46,7 +46,12 @@ userRouter.post('/register', async (req, res, next) => {
     console.log(savedUser);
 
     // JWT
+    const getAccessTok = await signAccTok(savedUser.id);
+    console.log(getAccessTok);
+    res.status(200).send({ access_token: getAccessTok });
   } catch (err) {
+    if (err.isJoi === true) err.status = 422;
+    next(err);
     console.error(err);
   }
 });

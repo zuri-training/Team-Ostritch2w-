@@ -5,9 +5,10 @@ GET http://localhost:8080/
 GET http://localhost:8080/register
 
 # register: success, duplicate user error: success
+# jwt access token: success
 POST http://localhost:8080/register
 Content-Type: application/json
 {
-"email": "test1@mail.com",
+"email": "test5@mail.com",
 "password": "Qw1rtygak"
 }
