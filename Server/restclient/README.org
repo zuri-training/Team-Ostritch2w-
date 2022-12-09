@@ -1,1 +1,53 @@
 * RESTClient Testing
+API testing file. Done using [[https://orgmode.org/][Org]] (in case you are wondering).
+API is built as a part of the project phase for Zuri.
+
+** Deadlines
+- Milestone 3 <2022-12-11 Sun>
+- Milestone 4 <2022-12-17 Sat>
+
+** Tools used
+- [[https://www.gnu.org/software/emacs/][emacs]]
+- [[https://github.com/pashky/restclient.el][restclient package for emacs]]
+
+** API Tests
+In case you know how to use (and view) Org files, what I have done is
+self-explanatory but if not, keys are as follows;
+
+- TODO - yet to be done/done but buggy and needs finetuning.
+- DONE - complete and tested(refer to the restclient file to see the
+  API test routes).
+- PRIORITY - Letters A to C, highest to lowest priority.
+
+*Note*: Regex is used for password patterns. Do make sure to add a
+warning/friendly reminder to users on characters and min-length to
+use when choosing their next password.
+
+Rest of the functionalities will be added as I build the API.
+
+#+BEGIN_QUOTE
+http://localhost:0000/
+**** DONE GET/ homepage
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+http://localhost:0000/register
+**** DONE GET/ register page
+**** DONE POST/ registration details
+**** DONE POST/ duplicate registration/error on same user regostration
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+http://localhost:0000/login
+**** TODO [#B] GET/ login page
+**** TODO [#B] POST/ login page
+**** TODO [#A] Integrate JWT
+**** TODO [#B] User sessions
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+http://localhost:0000/qr_gen
+**** TODO [#B] Setup QR API
+**** TODO [#A] Test QR functionality
+**** TODO [#B] Embed QR in a website
+#+END_QUOTE

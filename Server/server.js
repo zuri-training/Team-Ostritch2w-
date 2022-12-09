@@ -9,8 +9,8 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 import express from 'express';
 import bodyParser from 'body-parser';
-import { userController } from './controller';
-require('./utils/mongoose');
+import { userRouter } from './controller/index.js';
+import { mongoose } from './utils/index.js';
 const app = express();
 const PORT = process.env.PORT;
 
@@ -21,7 +21,9 @@ app.use(
 );
 app.use(bodyParser.json());
 
-app.use('/', userController);
+app.use(express.json());
+
+app.use('/', userRouter);
 
 app.listen(PORT, () => {
   console.log(`listening on port: ${PORT}`);

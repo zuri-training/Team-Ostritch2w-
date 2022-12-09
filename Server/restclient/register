@@ -1,0 +1,13 @@
+# Success
+GET http://localhost:8080/
+
+# success
+GET http://localhost:8080/register
+
+# register: success, duplicate user error: success
+POST http://localhost:8080/register
+Content-Type: application/json
+{
+"email": "test1@mail.com",
+"password": "Qw1rtygak"
+}

@@ -1,12 +1,8 @@
 * QR Generator API
-Done as part of the project phase for Zuri Training.
+Done as part of the project phase for Zuri Trainin.
 
-Most of the stuff here (well REST and CRUD isn't) might seem... a bit
-advanced but the secret is I have been RTFMs...
-
-Ah well, This README will contain documentation (ugh... I hate it but I got
-plans to rebuild this API with nestJs but there are failsafes if this
-file looks meh).
+README will contain documentation (ugh... I hate it but plans to
+rebuild the API with NestJS).
 
 ** Packages and Dependencies Used
 

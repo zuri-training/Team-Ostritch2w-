@@ -24,6 +24,8 @@ process.on('SIGINT', async () => {
   await mongoose.connection.close();
   process.exit(0);
 });
+
+mongoose.set('strictQuery', true);
 await mongoose
   .connect(URI, {
     useNewUrlParser: true,

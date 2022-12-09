@@ -6,6 +6,6 @@
  * Date Added: 08/12/2022
  *
  */
-import userController from './user.controller';
+import userRouter from './user.controller.js';
 
-export { userController };
+export { userRouter };
