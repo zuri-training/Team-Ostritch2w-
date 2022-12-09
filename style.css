@@ -1,3 +1,4 @@
+/* About Page */
 div#navbarNav {
   justify-content: end;
 }
@@ -44,3 +45,45 @@ footer h5 {
 /* .contact p {
   color: #fff;
 } */
+
+/* Landing Page  */
+
+.hero {
+  display: block;
+}
+.container1 {
+  display: flex;
+}
+.container2 {
+  margin-top: 40px;
+}
+.content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.box1 {
+  border: 1px solid grey;
+  margin: 10px;
+  background-color: #FDFDFD;
+  box-shadow: 6px 10px #FDFDFD;
+}
+.box2 {
+  margin: 10px;
+}
+.imageBoxes {
+  display: flex;
+}
+
+h5.card-title {
+  color: black;
+}
+p.card-text {
+  color: black;
+  font-size: 13px;
+}
+.row {
+  margin-top: 10px;
+}
+
