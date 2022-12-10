@@ -9,6 +9,8 @@ GET http://localhost:8080/register
 POST http://localhost:8080/register
 Content-Type: application/json
 {
-"email": "test5@mail.com",
-"password": "Qw1rtygak"
+"name": "test userx",
+"email": "test8@mail.com",
+"password": "Qw1rtygak",
+"phone_number": "123456789"
 }

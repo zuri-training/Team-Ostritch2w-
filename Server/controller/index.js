@@ -7,5 +7,6 @@
  *
  */
 import userRouter from './user.controller.js';
+import refToks from './refresh.controller';
 
-export { userRouter };
+export { userRouter, refToks };

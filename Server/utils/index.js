@@ -7,6 +7,6 @@
  */
 
 import mongoose from './mongoose.js';
-import authUserSchema from './joi.schema.js';
+import { authUserSchema, loginUserSchema } from './joi.schema.js';
 
-export { mongoose, authUserSchema };
+export { mongoose, authUserSchema, loginUserSchema };

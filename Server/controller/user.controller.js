@@ -8,7 +8,7 @@
 import express from 'express';
 import { User } from '../database/models/index.js';
 import httpErr from 'http-errors';
-import { authUserSchema } from '../utils/index.js';
+import { authUserSchema, loginUserSchema } from '../utils/index.js';
 const userRouter = express.Router();
 import { signAccTok } from '../middleware/index.js';
 import { signRefTok } from '../middleware/index.js';
@@ -80,7 +80,7 @@ userRouter.get('/login', (req, res) => {
  */
 userRouter.post('/login', async (req, res, next) => {
   try {
-    const validateCredentials = await authUserSchema.validateAsync(req.body);
+    const validateCredentials = await loginUserSchema.validateAsync(req.body);
     const findUser = await User.findOne({ email: validateCredentials.email });
     if (!findUser) throw httpErr.NotFound('this user does not exist on this platform');
 

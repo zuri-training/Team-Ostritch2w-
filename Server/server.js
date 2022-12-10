@@ -9,7 +9,7 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 import express from 'express';
 import bodyParser from 'body-parser';
-import { userRouter } from './controller/index.js';
+import { userRouter, refToks } from './controller/index.js';
 import { mongoose } from './utils/index.js';
 import morgan from 'morgan';
 import httpErr from 'http-errors';
@@ -31,6 +31,7 @@ app.use(express.json());
 // app.use(express.static(path.join(__dirname, '/public)))
 
 app.use('/', userRouter);
+app.use('/', refToks);
 
 app.use(async (req, res, next) => {
   next(httpErr.NotFound());
