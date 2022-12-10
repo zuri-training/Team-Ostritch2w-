@@ -7,6 +7,8 @@
  *
  */
 import userRouter from './user.controller.js';
-import refToks from './refresh.controller';
+import refToks from './refresh.controller.js';
+import qrRouter from './qr.controller.js';
+import logoutRouter from './logout.controller.js';
 
-export { userRouter, refToks };
+export { userRouter, refToks, qrRouter, logoutRouter };

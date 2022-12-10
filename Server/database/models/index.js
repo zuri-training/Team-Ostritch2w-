@@ -6,5 +6,6 @@
  *
  */
 import User from './user.model.js';
+import QR from './qr.model.js';
 
-export { User };
+export { User, QR };
