@@ -6,6 +6,6 @@
  *
  */
 import { signAccTok, verifyAccTok } from './jwt.access.js';
-import signRefTok from './jwt.refresh.js';
-import verifyRefTok from './jwt.refresh.js';
+import { signRefTok, verifyRefTok } from './jwt.refresh.js';
+
 export { signAccTok, verifyAccTok, signRefTok, verifyRefTok };
