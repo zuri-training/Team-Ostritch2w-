@@ -42,7 +42,7 @@ input {
   font-size: 20x;
   }
 #dd p {
-  font-size:5px;
+  font-size:9px;
   color: white;
   }
 #downdiv {
@@ -65,4 +65,10 @@ footer {
   font-size: 6px;
   color: white;
 }
+<<<<<<< HEAD
 /* Footer */
+=======
+#mya {
+  color: white;
+}
+>>>>>>> refs/remotes/origin/achiver
