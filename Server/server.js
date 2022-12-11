@@ -5,26 +5,21 @@
  * Date Added: 08/12/2022
  *
  */
-import * as dotenv from 'dotenv';
-dotenv.config();
 import express from 'express';
 import bodyParser from 'body-parser';
 import { userRouter, refToks, qrRouter, logoutRouter } from './controller/index.js';
 import { mongoose } from './utils/index.js';
-import morgan from 'morgan';
 import httpErr from 'http-errors';
 const app = express();
-const PORT = process.env.PORT;
+import cors from 'cors';
 
-app.use(morgan('dev'));
-
+app.use(cors());
 app.use(
   bodyParser.urlencoded({
     extended: false,
   }),
 );
 app.use(bodyParser.json());
-
 app.use(express.json());
 
 // static file(s) use. Uncomment for use on the frontend
@@ -49,6 +44,4 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`listening on port: ${PORT}`);
-});
+export default app;
