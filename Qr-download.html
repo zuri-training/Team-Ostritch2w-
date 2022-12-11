@@ -16,10 +16,39 @@
         <button class="btn-1">SVG</button>
         <button class="btn-1">PDF</button>
     </div>
-    <a href='#'>
-        <button class="btn">
+    <div class="container">
+    
+        <button type="submit" class="btn" onclick="openPopup()">
             Download
         </button>
+    
+
+        <div class="popup" id="popup">
+            <img src="Frame 6.png" alt="logo"/>
+            <h2>Success</h2>
+            <p>You have sucessfully dowloaded your Qr code</p>
+            <button type="button" onclick="closePopup()">View
+
+            </button>
+
+        </div>
+    </div>
+        <script>
+            let popup = document.getElementById("popup");
+            function openPopup(){
+                popup.classlist.add(
+                    "open.popup");
+            }
+            
+            function closePopup(){
+                popup.classlist.remove(
+                    "open.popup"
+                );
+
+            }
+    
+            
+        </script>
     
 </body>
 </html>
