@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Qr download</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Choose Download Format(s) here</h2>
+    <div class="form">
+        <button class="btn-1">JPG</button>
+        <button class="btn-1">PNG</button>
+        <button class="btn-1">SVG</button>
+        <button class="btn-1">PDF</button>
+    </div>
+    <div class="container">
+    
+        <!-- <button type="submit" class="btn" onclick="openPopup()">
+            Download
+        </button> -->
+        <button type="submit" class="btn" id="popin">
+            Download
+        </button>
+    
+
+        <div class="popup" id="popup">
+            <img src="Frame 6.png" alt="logo"/>
+            <h2>Success</h2>
+            <p>You have sucessfully dowloaded your Qr code</p>
+            <button type="button" onclick="closePopup()">View
+
+            </button>
+
+        </div>
+    </div>
+        <script src="./qr-down.js">
+        </script>
+    
+</body>
+</html>
