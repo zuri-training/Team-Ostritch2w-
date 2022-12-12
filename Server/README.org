@@ -1,9 +1,10 @@
 * QR Generator API
-Done as part of the project phase for Zuri Trainin.
+Done as part of the project phase for Zuri Training.
 
-README will contain documentation (ugh... I hate it but plans to
-rebuild the API with NestJS).
+API is a QR generator API with some functionalities like generating
+qr, downloading them in pdf, jpg and/or svg.
 
-** Packages and Dependencies Used
+The API, while is a project assigned, has a lot of features and
+functionalities to improvee which cannot be done given the timeframe and it being
+a one-man job.
 
-** TBA

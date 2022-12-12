@@ -6,10 +6,8 @@
  * Date Added: 08/12/2022
  *
  */
-import * as dotenv from 'dotenv';
-dotenv.config();
 import mongoose from 'mongoose';
-const URI = process.env.URI;
+import { DB_URI } from '../utils/env.js';
 
 mongoose.connection.on('connected', () => {
   console.log('mongoose connnected');
@@ -27,7 +25,7 @@ process.on('SIGINT', async () => {
 
 mongoose.set('strictQuery', true);
 await mongoose
-  .connect(URI, {
+  .connect(DB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
