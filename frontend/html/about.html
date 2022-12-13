@@ -11,41 +11,22 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="aboutCss.css" />
+    <link rel="stylesheet" href="../CSS/aboutCss.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">QR Gen</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item about">
-              <a class="nav-link active" id="about1" href="#">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Donate</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <div id="fd">
+      <img src="../img/logo.png" alt="" id="logo">
+      <label id="flab" display="in-line">
+        QR Gen
+      </label>
+      <nav display="in-line">
+        <a href="#">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contactUs.html">Contact Us</a>
+        <a id="asi" href="login.html">Sign In</a>
+    <a id="asu" href="createAcct.html">Sign Up</a>
+      </nav>
+    </div>
 
     <section class="hero">
       <div class="conatinerLeft">
@@ -62,44 +43,50 @@
       </div>
     </section>
 
-    <footer class="below">
-        <div class="contact">
-            <h5>Contact</h5>
-            <i class="bi bi-envelope"></i>
-            <p>QRcodegen@gmail.com</p>
-            <i class="bi bi-telephone"></i>
-            <p>08165396547</p>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-twitter"></i>
-        </div>
-        <div class="aboutUs">
-            <h5>About Us</h5>
-            <p>Contact us</p>
-            <p>Advertise us</p>
-            <p>Create QRcode</p>
-        </div>
-        <div class="info">
-            <h5>Information</h5>
-            <p>FAQ</p>
-            <p>Privacy Policy</p>
-            <p>Cookies Policy</p>
-        </div>
-        <div class="review">
-            <h5>Reviews</h5>
-            <p>Google</p>
-            <p>Twitter</p>
-            <p>Facebook</p>
-        </div>
-        <div class="subs">
-            <h5>Subscribe to Newsletter</h5>
-            <p>Get daily update about QR code Generator</p>
-            <div class="email">
-                <p>Email Address</p>
-                <p>Subscribe</p>
-            </div>
-        </div>
-    </footer>
+    <div id="downdiv">
+      <img src="../img/footerLogo.png" alt="" id="footerLogo">
+      <div id="dd">
+        <p><b>Contact</b></p>
+        <p>QRcodegen@gmail.com</p>
+        <p>08165396547</p>
+        <p></p>
+      </div>
+
+       <div id="dd">
+        <p><b>About Us</b></p>
+        <p>Contact Us</p>
+        <p>Advertise Us</p>
+        <p>Create QRcode</p>
+      </div>
+       <div id="dd">
+        <p><b>Information</b></p>
+        <p>FAQ</p>
+        <p>Privacy policy</p>
+        <p>Cookies policy</p>
+      </div>
+      <div id="dd">
+        <p><b>Review</b></p>
+        <p>Google</p>
+        <p>Twitter</p>
+        <p>Facebook</p>
+      </div>
+
+       <div id="dd">
+        <p><b>Subscribe to Newsletter</b></p>
+        <p>Get daily update about QR code generator</p>
+        <p></p>
+        <label font-size="7px" color="white" class="">
+          <input type="email" placeholder="email address" class="email">
+          <a href="" id="subs">Subscribe</a>
+        </label>
+ </div> 
+    </div>
+<div id="footer">
+  <hr></hr>
+  <footer>
+    <p id="3p">Copyright@2022. All right reserved.</p>
+  </footer>
+</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

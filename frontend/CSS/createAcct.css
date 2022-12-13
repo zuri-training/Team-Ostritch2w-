@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  background-color: #6F50B5;
 }
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -47,4 +48,16 @@ width: 60%;
 }
 #mya {
   text-decoration: none;
+}
+.container {
+  display: flex;
+}
+.right-side {
+  margin-left: 300px;
+  width: 50%;
+
+}
+.right-side img {
+  width: 100%;
+  height: 80vh;
 }

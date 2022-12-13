@@ -13,6 +13,10 @@
     }
     }
 
-section#background {
+body {
     background-color: #6F50B5;
 } 
+
+div #left-side {
+    background-color: #B7A8DA;
+}
