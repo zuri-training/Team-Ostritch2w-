@@ -12,3 +12,6 @@
     border-radius: 3px;
     background-color: rgba(226, 220, 240, 1);
 }
+.q3-top-left > h3{
+    text-align: left;
+}

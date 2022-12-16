@@ -36,9 +36,10 @@
   </div>
 </div>
 <div>
-  <!-- <button class="back"><  Back</button> -->
-  <button class="next ex" type="submit">Next ></button>
+  
+  <button class="next ex" type="submit" formaction="{% url 'generator:genqr2' %}">Next ></button>
   </form>
+  <a href="{% url 'generator:generate_qr' %}"><button class="back" style="margin-right: 100%;" ><  Back</button></a>
 </div>
 
 

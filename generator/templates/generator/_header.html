@@ -2,18 +2,23 @@
 
 <style>
   #sidebar{
-    background-color: red;
+    padding-left: 25px;
+    padding-top: 20px;
+    background-color:hsla(0, 0%, 96%, 0.863);
     position: absolute;
     width: 25%;
     height: 600px;
     display: none;
-  
+}
+.side1{
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
 }
 </style>
 
 <div class="all-menu">
   <div class="menu1">
-    <i class="fa fa-bars"></i>
+    <i onclick="open()" class="fa fa-bars"></i>
     <img src="{% static 'images/logo.png' %}"/>
     <p>QR Gen</p>
   </div>

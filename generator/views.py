@@ -297,4 +297,4 @@ class download_qr(LoginRequiredMixin, View):
         response['Content-Disposition'] = "attachment; filename=%s" % filename
         return response
 
-        return render(request, 'generator/qr_design.html')
+        return render(request, response, 'generator/qr_design.html')
