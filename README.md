@@ -104,6 +104,8 @@ The 3rd feature includes a sign up page /login page and 4th feature suggests (as
 [Documentation](https://docs.google.com/document/d/1398uKa6jz8dqIcQosrzwtx-qr0b1h5tS4gY4zxB2pX8/edit?usp=sharing)
 
 [Live URL](https://qr-popsicool1.vercel.app/)
+
+## https://qr-popsicool1.vercel.app/
 **DO NOT SHARE PRIVATE DATA, CROSS-CHECK BEFORE SHARING**
 
 <a id="langs"></a>
