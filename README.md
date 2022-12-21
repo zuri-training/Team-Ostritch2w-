@@ -105,8 +105,14 @@ The 3rd feature includes a sign up page /login page and 4th feature suggests (as
 
 [Live URL](http://popsicool.pythonanywhere.com/)
 
+
 ## http://popsicool.pythonanywhere.com/
 **DO NOT SHARE PRIVATE DATA, CROSS-CHECK BEFORE SHARING**
+
+
+## Test Account
+> email : testmail@zuri.com
+> Password : Testapp
 
 <a id="langs"></a>
 
